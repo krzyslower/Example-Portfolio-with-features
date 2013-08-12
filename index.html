@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>KRZYSZTOF LOWER</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Portfolio of Krzysztof Lower - Visual Designer, Creative Developer, Culture Shaker - Available for Freelance Work">
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+		<link href="css/style.css" rel="stylesheet" media="screen">
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<!-- web fonts -->
+		<script src="http://use.edgefonts.net/cabin.js"></script>
+		<script src="http://use.edgefonts.net/cabin-condensed.js"></script>
+		<!-- fancybox -->
+		<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+		<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js"></script>
+	</head>
+	<body>
+
+	<div class="container">
+
+		<header class="line">
+		
+			<h1 class="left span3of4 unit reset">Krzysztof Lower</h1>
+
+			<ul id="links" class="left span4 unit">
+				<li><a href="cv">CV</a></li>
+				<li><a href="http://themurphybed.tumblr.com/">Blog</a></li>
+				<li><a href="art">Art</a></li>
+			</ul>
+		
+		</header>
+
+		<nav class="line">
+
+			<ul>
+				<li id="design" class="left span3 unit"><a href="#">Visual Designer</a></li>
+				<li id="develop" class="left span3 unit"><a href="#">Creative Developer</a></li>
+				<li id="culture" class="left span3 unit"><a href="#">Culture Shaker</a></li>
+			</ul>
+
+		</nav>
+
+
+		<section id ="projects" class="line">
+
+			<!-- Project Thumbnail - add class to filter correctly (design, develop, culture) -->
+				<img src="img/DSG/DSGthumb.jpg" alt="Do Something Guide" class="project-toggle left span1 unit design"/>
+			
+			<div class="project-details line">
+				
+					<h3>Do Something Guide</h3>
+					<p>The Do Something Guide is an annual publication produced at Grand Valley State University in collaboration with the Office of Student Life and the Promotions Office. It is intended to help students learn more about how to get involved around campus.</p>
+					<p><a href="http://issuu.com/krzyslower/docs/dsg2013highquality" target="_blank">View the entire Do Something Guide</a></p>
+					<h6>Graphic Design | Art Direction | Project Management</h6>
+
+					<a class="close left span1 unit">&and;</a>
+			</div>
+
+
+			<!-- Project Thumbnail - add class to filter correctly (design, develop, culture) -->
+				<img src="img/posters/postersthumb.jpg" alt="Posters" class="project-toggle left span1 unit design"/>
+			
+			<div class="project-details line">
+				
+					<h3>Posters</h3>
+					<p>Posters designed for various clients and purposes.</p>
+					<h6>Graphic Design | Pre-Press</h6>
+
+					<!-- Project Images  -->
+					<a class="fancybox left span4 unit" rel="posters" href="img/posters/EddieIfft.png"><img src="img/posters/EddieIfftthumb.png" alt="Eddie Ifft" /></a>
+					<a class="fancybox left span4 unit" rel="posters" href="img/posters/AmySchumer.png"><img src="img/posters/AmySchumerthumb.png" alt="Amy Schumer" /></a>
+					<a class="fancybox left span4 unit" rel="posters" href="img/posters/Banner.png"><img src="img/posters/Bannerthumb.png" alt="GVS{You} Week" /></a>
+					<a class="fancybox left span4 unit" rel="posters" href="img/posters/BardToGo.png"><img src="img/posters/BardToGothumb.png" alt="Bard To Go" /></a>
+					<a class="fancybox left span4 unit" rel="posters" href="img/posters/AOR.png"><img src="img/posters/AORthumb.png" alt="Act On Racism" /></a>
+					<a class="fancybox left span4 unit" rel="posters" href="img/posters/DisabilityAwareness.png"><img src="img/posters/DisabilityAwarenessthumb.png" alt="Disability Awareness" /></a>
+					<a class="fancybox left span4 unit" rel="posters" href="img/posters/Poster.png"><img src="img/posters/Posterthumb.png" alt="Pattern Show" /></a>
+					
+					<a class="close left span1 unit">&and;</a>
+			</div>
+		
+		</section>
+
+		<aside class="line">
+		
+			<h4 class="left span1 unit">I enjoy working through all of the details of a project, because the details make a good project, a great project.</h4>
+
+			<h5 class="left span1 unit">In my free time, I am on an endless pursuit for information. I enjoy cooking, coffee, biking, <a href="http://amzn.com/w/J7G4TFE59RL3">reading</a>, porching, watching movies, and <a href="http://www.last.fm/user/kjlower039">listening to new music</a>.</h4>
+
+		</aside>
+
+	</div>
+
+	<footer class="line black">
+
+			<div class="container">
+
+				<h2 class="left span2 unit">Want to work together? Contact Me</h2>
+				
+				<ul id="contact" class="left span2 unit">
+					<li><a href="http://www.twitter.com/krzyslower">Twitter</a></li> 
+					<li><a href="mailto:krzyslower@gmail.com">Email</a></li> 
+					<li><a href="https://github.com/krzyslower">GitHub</a></li> 
+					<li><a href="http://dribbble.com/krzyslower">Dribbble</a></li> 
+				</ul>
+
+			</div>
+
+	</footer>
+	
+	<script type="text/javascript">
+
+	 	$(document).ready(function() {
+
+			// Hide the items you don't want to show if JS is available
+			$(".project-details").hide();
+			$(".project-toggle").hide();
+			
+			// Make the div toggle visible/invisible on click
+			$(".project-toggle").click(function() {
+			$(this).next(".project-details").slideToggle(400);
+
+			});	
+			
+			// Adds active class -- may or may not be useful
+			$('.project-toggle').removeClass("active");
+    		$('.project-details, .project-toggle').addClass("active");
+
+
+			// Closes the open .project-details when clicked
+    		$(".close").click(function() {
+			$(this).parent(".project-details").slideToggle(400);
+			
+			}); 
+
+			// Closes everything, resets home page view on click
+    		$(".reset").click(function() {
+			$(".project-details").hide(400);
+			$(".project-toggle").hide(400);
+			
+			}); 
+
+			// Content Filter	
+			$("#culture").click(function() {
+				$(".project-details").hide();
+				$(".culture").toggle(400);
+				$(".develop").hide(400);
+				$(".design").hide(400);
+				return false;
+			});
+
+			$("#develop").click(function() {
+				$(".project-details").hide();
+				$(".develop").toggle(400);
+				$(".culture").hide(400);
+				$(".design").hide(400);
+				return false;
+			});
+
+			$("#design").click(function() {
+				$(".project-details").hide();
+				$(".design").toggle(400);
+				$(".develop").hide(400);
+				$(".culture").hide(400);
+				return false;
+			});			
+
+		});	
+
+		// Fancybox
+
+		$(document).ready(function() {
+			$(".fancybox").fancybox();
+
+		});
+
+
+		// Google Analytics
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-13246189-3', 'krzyslower.com');
+		  ga('send', 'pageview');
+
+	</script>
+
+	</body>
+</html>
